@@ -1,0 +1,17 @@
+{
+  "name": "@ygg/constants",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint ./src --ext .ts",
+    "tsc": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@ygg/eslint-config": "workspace:*",
+    "@ygg/prettier-config": "workspace:*",
+    "@ygg/ts-config": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}

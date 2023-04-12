@@ -1,0 +1,43 @@
+{
+  "name": "yggdrasil",
+  "version": "1.0.0",
+  "description": "admin template",
+  "keywords": [
+    "vue3",
+    "typescript"
+  ],
+  "license": "ISC",
+  "author": "DrackRamoray@gmail.com",
+  "scripts": {
+    "build": "turbo build",
+    "create:pkg": "create-pkg",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "prepare": "husky install",
+    "sort:pkg": "sort-package-json package.json apps/**/package.json packages/**/package.json",
+    "tsc": "turbo tsc",
+    "upgrade:app": "tsx ./scripts/upgrade-app-version.ts"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.15.11",
+    "@types/semver": "^7.3.13",
+    "@ygg/create-pkg": "workspace:*",
+    "@ygg/ts-config": "workspace:*",
+    "concurrently": "^7.6.0",
+    "fast-glob": "^3.2.12",
+    "husky": "^8.0.3",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "semver": "^7.4.0",
+    "sort-package-json": "^2.4.1",
+    "tsx": "^3.12.6",
+    "turbo": "^1.9.0"
+  },
+  "packageManager": "pnpm@7.27.0",
+  "engines": {
+    "node": "^18"
+  }
+}

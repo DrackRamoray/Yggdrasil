@@ -1,0 +1,7 @@
+.turbo
+public
+dist
+assets
+auto-imports.d.ts
+components.d.ts
+node_modules

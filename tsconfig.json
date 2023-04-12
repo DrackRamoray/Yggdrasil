@@ -1,0 +1,9 @@
+{
+  "extends": "@ygg/ts-config/tsconfig-base.json",
+  "include": [
+    "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

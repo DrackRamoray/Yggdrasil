@@ -1,0 +1,22 @@
+{
+  "extends": "@ygg/ts-config/tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "template-*"
+  ],
+}

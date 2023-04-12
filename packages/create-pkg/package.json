@@ -1,0 +1,27 @@
+{
+  "name": "@ygg/create-pkg",
+  "version": "1.0.0",
+  "private": true,
+  "bin": "bin/bin.ts",
+  "files": [
+    "bin",
+    "src",
+    "template-*"
+  ],
+  "scripts": {
+    "lint": "eslint ./src --ext .vue,.ts",
+    "tsc": "tsc -p tsconfig.check.json --noEmit"
+  },
+  "dependencies": {
+    "kolorist": "^1.6.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/prompts": "^2.4.2",
+    "@ygg/eslint-config": "workspace:*",
+    "@ygg/prettier-config": "workspace:*",
+    "@ygg/ts-config": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}

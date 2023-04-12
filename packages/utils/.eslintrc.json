@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": "@ygg/eslint-config/eslint-config.json",
+  "globals": {
+    "YGG_STORAGE_NAMESPACE": "readonly",
+    "YGG_STORAGE_SECRET": "readonly",
+    "YGG_STORAGE_IV": "readonly"
+  }
+}

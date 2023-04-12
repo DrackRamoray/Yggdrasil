@@ -1,0 +1,12 @@
+{
+  "name": "@ygg/themes",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "src/theme.scss",
+    "src/variable.scss"
+  ],
+  "devDependencies": {
+    "sass": "^1.58.1"
+  }
+}

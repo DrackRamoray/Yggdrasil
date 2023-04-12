@@ -1,0 +1,33 @@
+@import "light";
+@import "dark";
+
+$themes: (
+  light: (
+    bg: $bg--light,
+    text: $text--light,
+    primary-bg: $bg--primary-light,
+  ),
+  dark: (
+    bg: $bg--dark,
+    text: $text--dark,
+    primray-bg: $bg--primary-dark,
+  ),
+);
+
+$scoped-theme: null;
+@mixin themed() {
+  @each $theme-name, $theme-map in $themes {
+    .theme--#{$theme-name} & {
+      $scoped-theme: () !global;
+      @each $variable-name, $variable-value in $theme-map {
+        $scoped-theme: map-merge($scoped-theme, ($variable-name: $variable-value)) !global;
+      }
+      @content;
+      $scoped-theme: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($scoped-theme, $key);
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+concurrently "pnpm sort:pkg" "pnpm exec turbo lint"  "pnpm exec turbo tsc" --raw
